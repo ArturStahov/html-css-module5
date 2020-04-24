@@ -101,8 +101,8 @@ h2::after {
   margin: 0 auto;
 }
 
-.products {
-  padding-top: 100px;
+.models {
+  padding: 100px 0px 100px 0px;
 }
 
 .products-item {
@@ -146,7 +146,6 @@ h2::after {
 }
 
 .footer {
-  margin-top: 100px;
   text-align: center;
   font-size: 16px;
   font-family: "Open Sans", "Times New Roman", sans-serif;
