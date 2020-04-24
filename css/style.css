@@ -1,0 +1,163 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+header {
+  width: 1110px;
+  margin: 0 auto;
+  padding-top: 35px;
+}
+a {
+  text-decoration: none;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.wrapper {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  font-size: 30px;
+  font-family: "Roboto", "Times New Roman", sans-serif;
+  font-weight: 300;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+.logo a {
+  color: #000000;
+}
+.logo::first-letter {
+  font-weight: 900;
+  color: #1abc9c;
+}
+.nav-container {
+  float: right;
+}
+
+.nav-list li {
+  float: left;
+}
+.nav-list li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.nav-link a {
+  font-size: 14px;
+  font-family: "Open Sans", "Times New Roman";
+  font-weight: 700;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #0f0101;
+  transition: 0.3s;
+}
+.nav-link a:focus,
+.nav-link a:hover {
+  color: #1abc9c;
+}
+
+main {
+  background-color: #e9f0fd;
+}
+
+h2 {
+  margin-bottom: 90px;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Roboto", "Times New Roman", sans-serif;
+  font-weight: 900;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #515151;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 160px;
+  border-bottom: 7px solid #1abc9c;
+  padding-top: 35px;
+  margin: 0 auto;
+}
+
+.products {
+  padding-top: 100px;
+}
+
+.products-item {
+  background-color: #ffffff;
+  width: 255px;
+  float: left;
+}
+
+.products-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+.products-name {
+  font-family: "Roboto", "Times New Roman", sans-serif;
+  background-color: rgb(50, 50, 50);
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: -0.6px;
+  font-weight: 700;
+}
+
+.products-name a {
+  color: rgb(255, 255, 255);
+  width: 170px;
+  padding: 8px 14px;
+  float: left;
+  font-size: 18px;
+}
+.products-name p {
+  color: rgb(255, 255, 255);
+  padding: 10px 12px;
+  background-color: rgba(255, 255, 255, 0.44);
+  margin: 0px;
+  float: right;
+}
+.products-name p::before {
+  content: "\0024";
+}
+.products-item:focus .products-name,
+.products-item:hover .products-name {
+  background-color: #1abc9c;
+}
+
+.footer {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Open Sans", "Times New Roman", sans-serif;
+  color: #fefefe;
+  line-height: 1.75;
+}
+.footer p {
+  padding: 35px 0px 35px 0px;
+  background-color: #323232;
+}
+.footer a {
+  text-decoration: none;
+  color: #46bfa9;
+}
