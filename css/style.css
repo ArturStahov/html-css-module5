@@ -21,7 +21,7 @@ body {
 header {
   width: 1110px;
   margin: 0 auto;
-  padding-top: 35px;
+  padding: 35px 0px 30px 0px;
 }
 a {
   text-decoration: none;
@@ -109,6 +109,7 @@ h2::after {
   background-color: #ffffff;
   width: 255px;
   float: left;
+  position: relative;
 }
 
 .products-item:not(:nth-child(4n)) {
@@ -143,6 +144,67 @@ h2::after {
 .products-item:focus .products-name,
 .products-item:hover .products-name {
   background-color: #1abc9c;
+}
+
+.overflov {
+  width: 255px;
+  height: 282px;
+  background-color: rgba(0, 0, 0, 0.55);
+  border: rgba(255, 255, 255, 0.77) solid 10px;
+  background-clip: padding-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.products-item:focus .overflov,
+.products-item:hover .overflov {
+  display: inherit;
+}
+
+.overflov-button {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: #ffffff solid 2px;
+}
+.overflov-button:not(:last-child) {
+  margin-right: 9px;
+  margin-bottom: 9px;
+}
+.overflov-button:focus,
+.overflov-button:hover {
+  background-color: #1abc9c;
+  background-clip: border-box;
+  border: none;
+}
+
+.overflov-button-bay {
+  width: 168px;
+  height: 50px;
+  border: #ffffff solid 2px;
+}
+.overflov-button-bay img {
+  display: inline;
+}
+.overflov-button-bay a {
+  font-size: 14px;
+  font-family: "OpenSans";
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 2.286;
+}
+.overflov-button-bay:focus,
+.overflov-button-bay:hover {
+  background-color: #323232;
+}
+
+.overflov-button-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .footer {
