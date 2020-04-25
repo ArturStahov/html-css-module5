@@ -82,7 +82,7 @@ main {
   background-color: #e9f0fd;
 }
 
-h2 {
+.models h2 {
   margin-bottom: 90px;
   text-align: center;
   font-size: 48px;
@@ -92,13 +92,103 @@ h2 {
   text-transform: uppercase;
   color: #515151;
 }
-h2::after {
+.models h2::after {
   content: "";
   display: block;
   width: 160px;
   border-bottom: 7px solid #1abc9c;
   padding-top: 35px;
   margin: 0 auto;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+.slider {
+  position: relative;
+}
+.slider-gradient {
+  position: absolute;
+  background-color: rgba(0, 0, 2, 0.52);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.slider-info-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.slider-info-block h2 a {
+  font-size: 60px;
+  font-family: "Roboto", "Times New Roman", sans-serif;
+  font-weight: 900;
+  line-height: 82px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: -0.6px;
+}
+
+.slider-info-block h2::after {
+  content: "city tours / tour tickets / tour guides";
+  display: block;
+  font-size: 24px;
+  font-family: "Roboto", "Times New Roman", sans-serif;
+  font-weight: 300;
+  line-height: 54px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: -0.6px;
+}
+
+.slider-text-hover:focus,
+.slider-text-hover:hover {
+  color: #ff7200;
+}
+
+.slider-control {
+  width: 1110px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+.slider-left-arrow {
+  padding: 25px;
+  display: block;
+  border: #ffffff solid 2px;
+  float: left;
+  background-color: rgba(0, 0, 0, 0);
+}
+.slider-left-arrow:focus,
+.slider-left-arrow:hover {
+  background-color: rgba(78, 198, 171, 0.65);
+  background-clip: border-box;
+  border: none;
+}
+
+.slider-right-arrow {
+  padding: 25px;
+  display: block;
+  border: #ffffff solid 2px;
+  display: block;
+  float: right;
+  background-color: rgba(0, 0, 0, 0);
+}
+.slider-right-arrow:focus,
+.slider-right-arrow:hover {
+  background-color: rgba(78, 198, 171, 0.65);
+  background-clip: border-box;
+  border: none;
 }
 
 .models {
@@ -146,7 +236,7 @@ h2::after {
   background-color: #1abc9c;
 }
 
-.overflov {
+.overlay {
   width: 255px;
   height: 282px;
   background-color: rgba(0, 0, 0, 0.55);
@@ -157,37 +247,37 @@ h2::after {
   left: 0;
   display: none;
 }
-.products-item:focus .overflov,
-.products-item:hover .overflov {
+.products-item:focus .overlay,
+.products-item:hover .overlay {
   display: inherit;
 }
 
-.overflov-button {
+.overlay-button {
   float: left;
   width: 50px;
   height: 50px;
   border: #ffffff solid 2px;
 }
-.overflov-button:not(:last-child) {
+.overlay-button:not(:last-child) {
   margin-right: 9px;
   margin-bottom: 9px;
 }
-.overflov-button:focus,
-.overflov-button:hover {
+.overlay-button:focus,
+.overlay-button:hover {
   background-color: #1abc9c;
   background-clip: border-box;
   border: none;
 }
 
-.overflov-button-bay {
+.overlay-button-bay {
   width: 168px;
   height: 50px;
   border: #ffffff solid 2px;
 }
-.overflov-button-bay img {
+.overlay-button-bay img {
   display: inline;
 }
-.overflov-button-bay a {
+.overlay-button-bay a {
   font-size: 14px;
   font-family: "OpenSans";
   font-weight: 400;
@@ -195,12 +285,12 @@ h2::after {
   text-transform: uppercase;
   line-height: 2.286;
 }
-.overflov-button-bay:focus,
-.overflov-button-bay:hover {
+.overlay-button-bay:focus,
+.overlay-button-bay:hover {
   background-color: #323232;
 }
 
-.overflov-button-block {
+.overlay-button-block {
   position: absolute;
   top: 50%;
   left: 50%;
